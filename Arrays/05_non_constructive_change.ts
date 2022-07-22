@@ -1,16 +1,16 @@
 export function nonConstructibleChange(coins: number[]) {
-    if(!coins.length)
-      return 1;
-      
-    let minValue = 0;
+  if(!coins.length)
+    return 1;
     
-    for(let coin of coins) {
-      if(coin > minValue + 1)
-        break;
+  let minValue = 0;
   
-      minValue += coin;
-    }
-    
-    return minValue + 1;
+  for(let coin of coins) {
+    if(coin > minValue + 1)
+      break;
+
+    minValue += coin;
   }
+  
+  return minValue + 1;
+}
   
