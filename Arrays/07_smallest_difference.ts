@@ -1,5 +1,5 @@
 export function smallestDifference(arrayOne: number[], arrayTwo: number[]) {
-    let minDiff: number = null;
+    let minDiff: any = null;
     let res: number[] = [];
 
     for (let num1 of arrayOne) {
