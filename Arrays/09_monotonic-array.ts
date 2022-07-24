@@ -1,4 +1,5 @@
 export function isMonotonic(array: number[]) {
+     // Assume array contains both increasing and decreasing trends
     let increasingTrend = true;
     let decreasingTrend = true;
     for(let i = 0; i < array.length; i++) {
